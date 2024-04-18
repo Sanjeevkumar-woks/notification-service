@@ -1,0 +1,16 @@
+{
+  "serviceName": "Notification-service",
+  "mongodb": {
+    "dbName": "notification",
+    "host": "cluster0.1cfhn.mongodb.net"
+  },
+  "senderEmail": "sanjeevmanagutti@gamil.com",
+  "mailQueueName": "mailQueue",
+  "awsRegion": "ap-south-1",
+  "awsQueues": {
+    "userNotificationQueue": "userNotificationQueue"
+  },
+  "serviceUrl": {
+    "authService": "https://backend.dev.newtral.io/auth-service"
+  }
+}
