@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import config from "config";
 import Joi from "joi";
-import { validateJoiSchema } from "../utils/validationSchema";
+import { validateJoiSchema } from "../scheema/validationSchema";
 import { MailTemplatesEnum } from "../constants/Enums/mailEnums";
 import * as mailService from "../services/mailService";
 export const sendEmail = async (req: Request, res: Response) => {

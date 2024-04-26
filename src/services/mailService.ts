@@ -6,7 +6,7 @@ import {
   IMailStatusDocument,
   MailPriorityEnum,
   MailStatusEnum,
-} from "../utils/mailSchema";
+} from "../scheema/mailSchema";
 import { MailTemplatesEnum } from "../constants/Enums/mailEnums";
 import { MAIL_TEMPLATE_META_DATA_VALIDATION_SCHEMA } from "../constants/mail";
 

@@ -4,7 +4,7 @@ import { Worker } from "bullmq";
 import { MailTemplatesEnum } from "../constants/Enums/mailEnums";
 import { sendMail } from "../utils/mailer";
 import { MailStatusModel } from "../models/mailStatusModel";
-import { MailStatusEnum } from "../utils/mailSchema";
+import { MailStatusEnum } from "../scheema/mailSchema";
 
 const mailQueueName = config.get("mailQueueName") as string;
 

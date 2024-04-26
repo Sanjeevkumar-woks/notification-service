@@ -3,7 +3,7 @@ import {
   IMailStatusDocument,
   MailStatusModelName,
   mailStatusSchema,
-} from "../utils/mailSchema";
+} from "../scheema/mailSchema";
 
 export const MailStatusModel = mongoose.model<IMailStatusDocument>(
   MailStatusModelName,
