@@ -3,6 +3,7 @@ import * as bodyPasser from "body-parser";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { healthCheck } from "./controllers/healthCheckController";
+import { apis } from "./routes";
 
 const app = express();
 
@@ -10,7 +11,7 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(bodyPasser.json());
 app.use(cookieParser());
 
-//app.use("/notification-service", apis);
+app.use("/notification-service", apis);
 app.use("/healthcheck", healthCheck);
 
 process.on("uncaughtException", function (err: Error) {

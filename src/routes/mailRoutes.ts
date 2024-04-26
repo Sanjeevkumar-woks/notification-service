@@ -6,4 +6,4 @@ export const mailAPis = Router();
 
 mailAPis.post("/sendMail", asyncFunction(mailController.sendEmail));
 
-//mailAPis.post("/sendBulkMails", asyncFunction(mailController.sendBulkMails));
+mailAPis.post("/sendBulkMails", asyncFunction(mailController.sendBulkMails));
